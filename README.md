@@ -30,4 +30,20 @@ After that lets run migrations and start up server
 python manage.py migrate
 python manage.py runserver
 ```
+You will be resulted with this
+```bash
+(todo_react) [whoami@swift backend]$ python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2019 - 18:14:33
+Django version 2.2.5, using settings 'backend.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+```
+Now logon to the address >> http://127.0.0.1:8000/
+we should see an instance of a Django application running on this address
+
+![django runnig successfully](https://miro.medium.com/max/3200/0*PvWdkGTFVcXMFOev)
 
