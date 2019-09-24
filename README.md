@@ -47,3 +47,25 @@ we should see an instance of a Django application running on this address
 
 ![django runnig successfully](https://miro.medium.com/max/3200/0*PvWdkGTFVcXMFOev)
 
+### Adding 'todo' app to Django app list
+
+Now we have to open up ```backend/settings.py``` file. By adding todo app inside Django  ```INSTALLED_APPS``` list django can recoginize our todo app.
+
+```python
+# backend/settings.py
+.
+.
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+    'todo' #adding todo app to the list
+]
+```
+
+
