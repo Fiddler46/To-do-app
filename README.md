@@ -68,4 +68,19 @@ INSTALLED_APPS = [
 ]
 ```
 
+### To-do Model defining 
+
+Creating a model for our app, to define how todo item should be stored in database.</BR>
+Open ```todo/models.py``` and update it with following code
+```python
+#add this to todo/models.py
+class Todo(models.Model):
+    title = models.CharField(max_length=120)
+    description = models.TextFeild()
+    completed = models.BooleanField(default=False)
+
+    def _str_(self):
+        return self.title
+```
+
 
