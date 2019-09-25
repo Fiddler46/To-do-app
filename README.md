@@ -105,3 +105,7 @@ class TodoAdmin(admin.ModelAdmin):
 # Register your models here
 admin.site.register(Todo, TodoAdmin)
 ```
+Now we need a superuser account to access the admin interface , for that use this command
+```bash
+python manage.py createsuperuser
+```
