@@ -95,4 +95,13 @@ For that
 python manage.py makemigrations todo
 python manage.py migrate todo
 ```
-
+Now lets configure admin interface that provided by django out-of-the box.</br>
+Update ```todo/admin.py``` like this
+```python
+from django.contrib import admin
+from .models import Todo #add this , importing todo model that we created 
+class TodoAdmin(admin.ModelAdmin):
+    list_display = ('title', 'description', 'completed')
+# Register your models here
+admin.site.register(Todo, TodoAdmin)
+```
