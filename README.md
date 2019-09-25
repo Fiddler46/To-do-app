@@ -82,5 +82,17 @@ class Todo(models.Model):
     def _str_(self):
         return self.title
 ```
+Above code explain the 3 models which we have introduced for our todo app
 
+- Title
+- Description
+- Completed 
+
+Complete property will act as status of the task(completed/not completed).</br>
+To apply chnages that we have given we have to migrate the app.</br>
+For that
+```shell
+python manage.py makemigrations todo
+python manage.py migrate todo
+```
 
